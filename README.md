@@ -1,2 +1,2 @@
-# xl-intellij-plugin
-XebiaLabs IntelliJ Community Plugin
+
+# XebiaLabs IntelliJ Community Plugin

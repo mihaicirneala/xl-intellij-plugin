@@ -1,0 +1,47 @@
+<idea-plugin version="2">
+  <id>com.xebialabs.intellij.community.plugin</id>
+  <name>XebiaLabs IntelliJ Community Plugin</name>
+  <version>0.1</version>
+  <vendor email="mcirneala@xebialabs.com" url="http://www.xebialabs.com">XebiaLabs</vendor>
+
+  <description><![CDATA[
+      <ul>
+        <li>Run XL Deploy CLI scripts</li>
+        <li>Manage XL Deploy Server</li>
+        <li>Support for configuration files (plugin.xml, synthetic.xml etc.)</li>
+        <li>Support for CI types</li>
+      </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <configurationType implementation="com.xebialabs.intellij.runner.cli.XlDeployCliConfigurationType"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
